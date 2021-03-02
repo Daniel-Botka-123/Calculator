@@ -1,0 +1,117 @@
+/* ************************************************************ BODY SECTION ************************************************************ */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, #b2fefa, #0ed2f7);
+    font-family: Verdana, sans-serif;
+    user-select: none;
+    overflow: hidden;
+}
+
+/* ************************************************************ MAIN SECTION ************************************************************ */
+
+#main {
+    width: 25vw;
+    height: 70vh;
+    background-color: red;
+    margin: 15vh 35%;
+    border-radius: 3%;
+    position: relative;
+}
+
+#main_display {
+    width: 20vw;
+    height: 10vh;
+    top: 5vh;
+    left: 2.5vw;
+    background-color: black;
+    border-radius: 3%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#main_display_output {
+    padding-right: 20px;
+    text-align: right;
+    height: 5vh;
+    font-size: 35px;
+    color: white;
+    margin-top: 2.5vh;
+    border: none;
+    outline: none;
+}
+
+.calculator_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: absolute;
+    bottom: 10vh;
+    left: 2.5vw;
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+}
+
+.grid-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 4.25vw;
+    height: 6vh;
+    font-size: 30px;
+    border-radius: 10%;
+    border: none;
+    outline: none;
+}
+
+.grid-button:hover {
+    background-color: rgb(255, 255, 255, 1);
+}
+
+/* ************************************************************ MEDIA QUERIES ************************************************************ */
+
+@media (max-width: 1380px) {
+
+    #main {
+        width: 35vw;
+    }
+
+    #main_display {
+        width: 30vw;
+    }
+
+    .grid-button {
+        width: 6.75vw;
+    }
+}
+
+@media (max-width: 935px) {
+
+    #main {
+        width: 45vw;
+        margin: 15vh 22.5%;
+    }
+
+    #main_display {
+        width: 40vw;
+    }
+
+    .grid-button {
+        width: 9.25vw;
+    }
+}
+
+@media (max-width: 640px) {
+
+    #main {
+        width: 55vw;
+    }
+
+    #main_display {
+        width: 50vw;
+    }
+
+    .grid-button {
+        width: 11.65vw;
+    }
+}
